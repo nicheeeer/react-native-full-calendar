@@ -20,31 +20,42 @@
         "src"
     ],
     "react-native": "src/index.tsx",
-    "source": "src/index",    
+    "source": "src/index",
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ]
+    },
     "scripts": {
         "lint": "eslint .",
         "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
-        "test": "jest"
+        "test": "jest",
+        "lint-staged": "lint-staged"
     },
     "peerDependencies": {
+        "react": ">=18.0.0",
         "react-native": ">=0.64.0",
         "react-native-gesture-handler": ">=2.0.0",
-        "react-native-reanimated": ">=2.8.0",
-        "react": ">=18.0.0"
-      },
+        "react-native-reanimated": ">=2.8.0"
+    },
     "devDependencies": {
         "@react-native/babel-preset": "0.74.87",
         "@react-native/eslint-config": "0.74.87",
-        "@react-native/metro-config": "0.74.87",
         "@react-native/typescript-config": "0.74.87",
         "@types/react": "^18.2.6",
         "@types/react-test-renderer": "^18.0.0",
         "babel-jest": "^29.6.3",
         "eslint": "^8.19.0",
+        "husky": "^9.1.7",
         "jest": "^29.6.3",
+        "lint-staged": "^15.2.10",
         "prettier": "2.8.8",
+        "react": "18.2.0",
+        "react-native": "0.74.5",
+        "react-native-gesture-handler": "~2.16.1",
+        "react-native-reanimated": "~3.10.1",
         "react-test-renderer": "18.2.0",
-        "typedoc-plugin-markdown": "^4.3.1",
         "typescript": "5.0.4"
     }
 }
