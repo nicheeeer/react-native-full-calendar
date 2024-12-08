@@ -1,7 +1,7 @@
 {
     "name": "react-native-full-calendars",
     "description": "React Native Full Calendar (RNFC) is an intuitive and powerful calendar component library designed for React Native.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Jaehyup Lee <dlwoguq321@gmail.com> (https://github.com/leejaehyup)",
     "license": "MIT",
     "homepage": "https://nichecoding.github.io",
@@ -17,8 +17,13 @@
         "full-calendar"
     ],
     "files": [
-        "src"
+        "src",
+        "lib"
     ],
+    "source": "src/index.tsx",
+    "main": "lib/commonjs/index",
+    "module": "lib/module/index",
+    "types": "lib/typescript/index.d.ts",
     "react-native": "src/index.tsx",
     "lint-staged": {
         "*.{ts,tsx}": [
@@ -30,7 +35,8 @@
         "lint": "eslint .",
         "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\"",
         "test": "jest",
-        "lint-staged": "lint-staged"
+        "lint-staged": "lint-staged",
+        "prepare": "bob build"
     },
     "peerDependencies": {
         "react": ">=18.0.0",
@@ -52,6 +58,7 @@
         "prettier": "2.8.8",
         "react": "18.2.0",
         "react-native": "0.74.5",
+        "react-native-builder-bob": "^0.35.2",
         "react-native-gesture-handler": "~2.16.1",
         "react-native-reanimated": "~3.10.1",
         "react-test-renderer": "18.2.0",
@@ -60,5 +67,14 @@
     "dependencies": {
         "date-fns": "^4.1.0",
         "lodash": "^4.17.21"
+    },
+    "react-native-builder-bob": {
+        "source": "src",
+        "output": "lib",
+        "targets": [
+          "commonjs",
+          "module",
+          "typescript"
+        ]
     }
 }
