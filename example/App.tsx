@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { Dimensions, SafeAreaView } from 'react-native';
-import Calendar from 'react-native-full-calendar';
+import Calendar from 'react-native-full-calendars';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { mockData } from './mockData';
 

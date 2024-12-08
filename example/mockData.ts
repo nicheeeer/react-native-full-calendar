@@ -1,5 +1,5 @@
 import { addDays, addHours } from 'date-fns';
-import { CalendarData } from 'react-native-full-calendar';
+import { CalendarData } from 'react-native-full-calendars';
 
 const getRandomDate = (start: Date, rangeInDays: number): Date => {
     const randomDays = Math.floor(Math.random() * rangeInDays);

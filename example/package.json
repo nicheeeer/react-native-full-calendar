@@ -1,5 +1,5 @@
 {
-    "name": "react-native-full-calendar-exmaple",
+    "name": "react-native-full-calendars-exmaple",
     "version": "1.0.0",
     "scripts": {
         "android": "react-native run-android",
@@ -15,7 +15,7 @@
         "react-native": "0.74.5",
         "react-native-gesture-handler": "^2.21.0",
         "react-native-reanimated": "^3.16.1",
-        "react-native-full-calendar": "link:.."
+        "react-native-full-calendars": "link:.."
     },
     "devDependencies": {
         "@babel/core": "^7.20.0",
