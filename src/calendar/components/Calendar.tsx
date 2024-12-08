@@ -37,15 +37,15 @@ const Calendar = React.forwardRef<CalendarController>((_, ref) => {
   const onPageChangeRef = useRef(onPageChange);
   onPageChangeRef.current = onPageChange;
 
-  const { nextPage, prevPage, setPage } = useCalendarController({
+  const { goToDatePage, goToNextPage, goToPrevPage } = useCalendarController({
     swiperRef,
     initialDate,
   });
 
   useImperativeHandle(ref, () => ({
-    nextPage,
-    prevPage,
-    setPage,
+    goToDatePage,
+    goToNextPage,
+    goToPrevPage,
   }));
 
   const onMonthChange = useCallback(

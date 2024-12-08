@@ -186,18 +186,18 @@ export type CalendarController = {
    * Navigates to the next page in the calendar.
    * @param options Additional options to customize the navigation behavior.
    */
-  nextPage: (options?: ImperativeOptions) => void;
+  goToNextPage: (options?: ImperativeOptions) => void;
   /**
    * Navigates to the previous page in the calendar.
    * @param options Additional options to customize the navigation behavior.
    */
-  prevPage: (options?: ImperativeOptions) => void;
+  goToPrevPage: (options?: ImperativeOptions) => void;
   /**
    * Sets the calendar to a specific page corresponding to the given date.
    * @param date The target date to navigate to.
    * @param options Additional options to customize the navigation behavior.
    */
-  setPage: (date: Date, options?: ImperativeOptions) => void;
+  goToDatePage: (date: Date, options?: ImperativeOptions) => void;
 };
 
 export interface Theme {

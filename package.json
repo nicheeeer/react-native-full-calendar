@@ -20,7 +20,6 @@
         "src"
     ],
     "react-native": "src/index.tsx",
-    "source": "src/index",
     "lint-staged": {
         "*.{ts,tsx}": [
             "eslint --fix",

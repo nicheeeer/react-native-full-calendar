@@ -11,13 +11,13 @@ interface IProps {
 export function useCalendarController(props: IProps): CalendarController {
   const { swiperRef, initialDate } = props;
 
-  const setPage = (date: Date, options?: ImperativeOptions) => {
+  const goToDatePage = (date: Date, options?: ImperativeOptions) => {
     const animated = options?.animated ?? false;
     const page = differenceInCalendarMonths(date, initialDate);
     swiperRef.current?.setPage(page, { animated });
   };
 
-  const nextPage = useCallback(
+  const goToNextPage = useCallback(
     async (options: ImperativeOptions = {}) => {
       const animated = options?.animated ?? true;
       swiperRef.current?.nextPage({ animated });
@@ -25,7 +25,7 @@ export function useCalendarController(props: IProps): CalendarController {
     [swiperRef]
   );
 
-  const prevPage = useCallback(
+  const goToPrevPage = useCallback(
     async (options: ImperativeOptions = {}) => {
       const animated = options?.animated ?? true;
       swiperRef.current?.prevPage({ animated });
@@ -34,8 +34,8 @@ export function useCalendarController(props: IProps): CalendarController {
   );
 
   return {
-    setPage,
-    nextPage,
-    prevPage,
+    goToDatePage,
+    goToNextPage,
+    goToPrevPage,
   };
 }
