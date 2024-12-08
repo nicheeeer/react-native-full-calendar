@@ -1,5 +1,5 @@
 {
-    "name": "react-native-full-calendar",
+    "name": "react-native-full-calendars",
     "description": "React Native Full Calendar (RNFC) is an intuitive and powerful calendar component library designed for React Native.",
     "version": "1.0.0",
     "author": "Jaehyup Lee <dlwoguq321@gmail.com> (https://github.com/leejaehyup)",
@@ -7,7 +7,7 @@
     "homepage": "https://nichecoding.github.io",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/nichecoding/react-native-full-calendar.git"
+        "url": "git+https://github.com/nichecoding/react-native-full-calendars.git"
     },
     "keywords": [
         "react-native",
