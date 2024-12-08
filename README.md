@@ -2,8 +2,6 @@
 
 React Native Full Calendar (RNFC) is an intuitive and powerful calendar component library designed for React Native.
 
----
-
 <br/>
 
 <div style="display: flex; align-items: center;">
@@ -21,7 +19,7 @@ React Native Full Calendar (RNFC) is an intuitive and powerful calendar componen
 
 <br/>
 
-## Getting Started
+## 📖 Documentation
 
 Check out the [documentation](https://nichecoding.github.io) website.
 
