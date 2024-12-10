@@ -15,13 +15,15 @@ React Native Full Calendar (RNFC) is an intuitive and powerful calendar componen
 -   Full Monthly Calendar: Displays events on a monthly basis.
 -   Event Styling: Add multiple events per day with colors and styles.
 -   Multi-Day Events: Visualize events that span across multiple days (e.g., team meetings, vacations).
--   Smooth Scrolling: Scroll seamlessly between months.
+-   Horizontal Scrolling (Currently Supported): The calendar currently supports horizontal scrolling only.
 
 <br/>
 
 ## 📖 Documentation
 
 Check out the [documentation](https://nichecoding.github.io) website.
+
+<br/>
 
 ## 🔌 Installation
 
@@ -52,7 +54,7 @@ import React, { useCallback, useState } from 'react';
 import { Dimensions, SafeAreaView } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Calendar from 'react-native-full-calendars';
-import { mockData } from './test';
+import { mockData } from './mockData';
 
 function App(): React.JSX.Element {
     const [selectedDate, setSelectedDate] = useState<Date>(new Date());
